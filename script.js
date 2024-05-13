@@ -5,17 +5,17 @@ function generateShape() {
 
   var output = "";
   if (number % 2 === 0) {
-    // Generate Square
+    // Generate Triangle
     for (var i = number; i >= 1; i--) {
-      for (var j = 1; j <= number; j++) {
+      for (var j = number; j >= i; j--) {
         output += i + " ";
       }
       output += "<br>";
     }
   } else {
-    // Generate Triangle
+    // Generate Square
     for (var i = number; i >= 1; i--) {
-      for (var j = 1; j <= i; j++) {
+      for (var j = 1; j <= number; j++) {
         output += i + " ";
       }
       output += "<br>";
