@@ -1,5 +1,5 @@
 function generateShape() {
-  var number = document.getElementById("numberInput").value;
+  var number = parseInt(document.getElementById("numberInput").value);
   var outputDiv = document.getElementById("output");
   outputDiv.innerHTML = "";
 
@@ -7,7 +7,7 @@ function generateShape() {
   if (number % 2 === 0) {
     // Generate Square
     for (var i = number; i >= 1; i--) {
-      for (var j = 1; j <= i; j++) {
+      for (var j = 1; j <= number; j++) {
         output += i + " ";
       }
       output += "<br>";
