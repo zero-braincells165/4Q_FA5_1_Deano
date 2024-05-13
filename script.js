@@ -15,7 +15,7 @@ function generateShape() {
   } else {
     // Generate Triangle
     for (var i = number; i >= 1; i--) {
-      for (var j = number; j >= i; j--) {
+      for (var j = 1; j <= i; j++) {
         output += i + " ";
       }
       output += "<br>";
